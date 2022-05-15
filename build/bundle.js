@@ -9750,7 +9750,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (38:4) <Tab>
+    // (39:4) <Tab>
     function create_default_slot_3(ctx) {
     	let t_value = /*p*/ ctx[2].pseudo + "";
     	let t;
@@ -9772,14 +9772,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(38:4) <Tab>",
+    		source: "(39:4) <Tab>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:3) {#each shuffled as p}
+    // (38:3) {#each shuffled as p}
     function create_each_block_1(ctx) {
     	let tab;
     	let current;
@@ -9827,14 +9827,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(37:3) {#each shuffled as p}",
+    		source: "(38:3) {#each shuffled as p}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:2) <TabList>
+    // (37:2) <TabList>
     function create_default_slot_2(ctx) {
     	let each_1_anchor;
     	let current;
@@ -9923,14 +9923,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(36:2) <TabList>",
+    		source: "(37:2) <TabList>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (43:3) <TabPanel>
+    // (44:3) <TabPanel>
     function create_default_slot_1(ctx) {
     	let performerdescription;
     	let t;
@@ -9978,14 +9978,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(43:3) <TabPanel>",
+    		source: "(44:3) <TabPanel>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (42:2) {#each shuffled as p}
+    // (43:2) {#each shuffled as p}
     function create_each_block(ctx) {
     	let tabpanel;
     	let current;
@@ -10033,14 +10033,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(42:2) {#each shuffled as p}",
+    		source: "(43:2) {#each shuffled as p}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (35:1) <Tabs>
+    // (36:1) <Tabs>
     function create_default_slot(ctx) {
     	let tablist;
     	let t;
@@ -10158,7 +10158,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(35:1) <Tabs>",
+    		source: "(36:1) <Tabs>",
     		ctx
     	});
 
@@ -10248,18 +10248,18 @@ var app = (function () {
     			add_location(div0, file, 22, 2, 730);
     			attr_dev(header, "class", "svelte-1c2yk31");
     			add_location(header, file, 18, 1, 468);
-    			if (!src_url_equal(img0.src, img0_src_value = "./photos/couleur_jaune.png")) attr_dev(img0, "src", img0_src_value);
+    			if (!src_url_equal(img0.src, img0_src_value = "https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_jaune.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "poster1");
     			attr_dev(img0, "class", "svelte-1c2yk31");
     			add_location(img0, file, 29, 2, 927);
-    			if (!src_url_equal(img1.src, img1_src_value = "./photos/couleur_orange.png")) attr_dev(img1, "src", img1_src_value);
+    			if (!src_url_equal(img1.src, img1_src_value = "https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_orange.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "poster2");
     			attr_dev(img1, "class", "svelte-1c2yk31");
-    			add_location(img1, file, 30, 2, 982);
-    			if (!src_url_equal(img2.src, img2_src_value = "./photos/couleur_bleu.png")) attr_dev(img2, "src", img2_src_value);
+    			add_location(img1, file, 30, 2, 1046);
+    			if (!src_url_equal(img2.src, img2_src_value = "https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_bleu.png\n")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "poster3");
     			attr_dev(img2, "class", "svelte-1c2yk31");
-    			add_location(img2, file, 31, 2, 1038);
+    			add_location(img2, file, 31, 2, 1166);
     			attr_dev(div1, "class", "posters svelte-1c2yk31");
     			add_location(div1, file, 28, 1, 903);
     			attr_dev(main, "class", "svelte-1c2yk31");
