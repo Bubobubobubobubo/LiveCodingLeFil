@@ -7,6 +7,7 @@
     export let url_portrait;
     export let link;
     export let video;
+
 </script>
 
 <main>

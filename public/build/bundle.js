@@ -9296,29 +9296,29 @@ var app = (function () {
     			a1 = element("a");
     			t7 = text("Site internet");
     			attr_dev(h1, "class", "artistname svelte-itmvzy");
-    			add_location(h1, file$2, 14, 8, 261);
+    			add_location(h1, file$2, 15, 8, 262);
     			attr_dev(a0, "href", /*link*/ ctx[4]);
     			attr_dev(a0, "class", "name_with_link svelte-itmvzy");
-    			add_location(a0, file$2, 15, 8, 304);
+    			add_location(a0, file$2, 16, 8, 305);
     			attr_dev(div0, "class", "box_header svelte-itmvzy");
-    			add_location(div0, file$2, 13, 4, 228);
+    			add_location(div0, file$2, 14, 4, 229);
     			attr_dev(span, "class", "video_item svelte-itmvzy");
-    			add_location(span, file$2, 20, 8, 402);
+    			add_location(span, file$2, 21, 8, 403);
     			attr_dev(p0, "class", "artistdescription svelte-itmvzy");
-    			add_location(p0, file$2, 25, 12, 575);
+    			add_location(p0, file$2, 26, 12, 576);
     			attr_dev(div1, "class", "text_item svelte-itmvzy");
-    			add_location(div1, file$2, 24, 8, 539);
+    			add_location(div1, file$2, 25, 8, 540);
     			attr_dev(a1, "href", /*link*/ ctx[4]);
     			attr_dev(a1, "class", "svelte-itmvzy");
-    			add_location(a1, file$2, 29, 41, 711);
+    			add_location(a1, file$2, 30, 41, 712);
     			attr_dev(p1, "class", "artistdescription svelte-itmvzy");
-    			add_location(p1, file$2, 29, 12, 682);
+    			add_location(p1, file$2, 30, 12, 683);
     			attr_dev(div2, "class", "link_item svelte-itmvzy");
-    			add_location(div2, file$2, 28, 8, 646);
+    			add_location(div2, file$2, 29, 8, 647);
     			attr_dev(div3, "class", "content svelte-itmvzy");
-    			add_location(div3, file$2, 18, 4, 371);
+    			add_location(div3, file$2, 19, 4, 372);
     			attr_dev(main, "class", "svelte-itmvzy");
-    			add_location(main, file$2, 11, 0, 216);
+    			add_location(main, file$2, 12, 0, 217);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9693,7 +9693,7 @@ var app = (function () {
             video: "/videos/Bubo.webm",
             link: "https://raphaelforment.fr",
             description: "Raphaël (bubobubo) est un live-coder actif à Lyon et à Paris. Il est actif au sein du collectif TOPLAP et du mouvement Algorave depuis 2018. Raphaël s'intéresse à l'utilisation du live coding comme technique, instrument et art performatif par son travail de recherche, son enseignement ou ses collaborations avec le collectif parisien Cookie Collective ou avec les lyonnais du LocalHost.",
-            url_portrait: "/photos/lezgo.png",
+            url_portrait: "./photos/lezgo.png",
             id: 1,
         },
         {
@@ -9702,7 +9702,7 @@ var app = (function () {
             video: "/videos/ralt144mi.webm",
             link: "https://rhoumi.github.io/",
             description: "Ralt144MI est une bande sonore de souvenirs vidéos centrée sur un univers aquatique. C'est le résultat de la redécouverte d'un large stock de cassettes vidéos familiales de plongée sous-marine. Le son, codé en direct deviendra support des lectures de bandes, interagissant et évoluant avec elles.",
-            url_portrait: "/photos/ralt144mi.jpeg",
+            url_portrait: "./photos/ralt144mi.jpeg",
             id: 2,
         },
         {
@@ -9711,7 +9711,7 @@ var app = (function () {
             video: "/videos/elie.webm",
             link: "https://linktr.ee/julescipher",
             description: "Frappé assez récemment par la passion du livecoding, Elie Gavoty (Jules Cipher), développe une pratique tournée notamment vers les microrythmes et l'usage de spatialisation pour tenter d'intensifier l'immersion d'une dance music improvisée et atypique.",
-            url_portrait: "/photos/elie.JPG",
+            url_portrait: "./photos/elie.JPG",
             id: 3,
         },
         {
@@ -9719,7 +9719,7 @@ var app = (function () {
             video: "/videos/azertype.webm",
             link: "https://linktr.ee/azertype",
             description: "azertype Half-blood wizard Hardware: XY OS: bipolar & dys Software: anticapitalism & intersectionnality & neurodiversity Powered by Cyberflemme",
-            url_portrait: "/photos/azertype.png",
+            url_portrait: "./photos/azertype.png",
             id: 4,
         },
         {
@@ -9728,7 +9728,7 @@ var app = (function () {
             video: "/videos/leon.mp4",
             link: "https://leon196.github.io/",
             description: "Programmation d'effets visuels improvisées, entre sculptures fractals mathématiques, filtres d'images animés et distorsions de personnages 3D.",
-            url_portrait: "/photos/photo_leon.png",
+            url_portrait: "./photos/photo_leon.png",
             id: 5,
         },
     ];
