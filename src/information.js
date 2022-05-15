@@ -14,6 +14,8 @@ const pictures = {
 
 const videos = {
     // This won't work for now but I'll get to it.
+    // Not sure if I should compress the hell out
+    // of them or host them on a server somewhere.
     raph: "./videos/Bubo.webm",
     remi: "./videos/ralt144mi.webm",
     elie: "./videos/elie.webm",
