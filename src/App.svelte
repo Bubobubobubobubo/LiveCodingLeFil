@@ -2,7 +2,7 @@
 	import { Tabs, TabList, TabPanel, Tab } from './tabs/tabs.js';
 	import PerformerDescription from './PerformerDescription.svelte';
 	import MoreInformation from './MoreInformation.svelte';
-	import performers from './information';
+	import {performers, posters} from './information';
 
 	let shuffled = performers
 		.map(value => ({ value, sort: Math.random() }))
@@ -27,10 +27,9 @@
 	</header>
 
 	<div class="posters">
-		<img src="https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_jaune.png" alt="poster1">
-		<img src="https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_orange.png" alt="poster2">
-		<img src="https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_bleu.png
-" alt="poster3">
+		<img src={posters.jaune} alt="poster1">
+		<img src={posters.orange} alt="poster2">
+		<img src={posters.bleu} alt="poster3">
 	</div>
 
 	<Tabs>
