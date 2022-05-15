@@ -27,9 +27,10 @@
 	</header>
 
 	<div class="posters">
-		<img src="./photos/couleur_jaune.png" alt="poster1">
-		<img src="./photos/couleur_orange.png" alt="poster2">
-		<img src="./photos/couleur_bleu.png" alt="poster3">
+		<img src="https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_jaune.png" alt="poster1">
+		<img src="https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_orange.png" alt="poster2">
+		<img src="https://github.com/Bubobubobubobubo/LiveCodingLeFil/blob/gh-pages/photos/couleur_bleu.png
+" alt="poster3">
 	</div>
 
 	<Tabs>
