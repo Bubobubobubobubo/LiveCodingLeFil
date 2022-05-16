@@ -77,9 +77,14 @@
         color: black;
     }
 
+    main:hover {
+        border: 20px dashed white;
+    }
+
     main {
+        transition-duration: 0.4s;
         box-sizing: border-box;
-        border: 2px solid black;
+        border: 10px dashed white;
         padding: 20px 20px;
         font-family: 'terminal_grotesque';
         font-weight: normal;
