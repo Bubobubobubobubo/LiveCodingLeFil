@@ -9295,29 +9295,29 @@ var app = (function () {
     			p1 = element("p");
     			a1 = element("a");
     			t7 = text("Site internet");
-    			attr_dev(h1, "class", "artistname svelte-itmvzy");
+    			attr_dev(h1, "class", "artistname svelte-13ghs9p");
     			add_location(h1, file$2, 15, 8, 262);
     			attr_dev(a0, "href", /*link*/ ctx[4]);
-    			attr_dev(a0, "class", "name_with_link svelte-itmvzy");
+    			attr_dev(a0, "class", "name_with_link svelte-13ghs9p");
     			add_location(a0, file$2, 16, 8, 305);
-    			attr_dev(div0, "class", "box_header svelte-itmvzy");
+    			attr_dev(div0, "class", "box_header svelte-13ghs9p");
     			add_location(div0, file$2, 14, 4, 229);
-    			attr_dev(span, "class", "video_item svelte-itmvzy");
+    			attr_dev(span, "class", "video_item svelte-13ghs9p");
     			add_location(span, file$2, 21, 8, 403);
-    			attr_dev(p0, "class", "artistdescription svelte-itmvzy");
+    			attr_dev(p0, "class", "artistdescription svelte-13ghs9p");
     			add_location(p0, file$2, 26, 12, 576);
-    			attr_dev(div1, "class", "text_item svelte-itmvzy");
+    			attr_dev(div1, "class", "text_item svelte-13ghs9p");
     			add_location(div1, file$2, 25, 8, 540);
     			attr_dev(a1, "href", /*link*/ ctx[4]);
-    			attr_dev(a1, "class", "svelte-itmvzy");
+    			attr_dev(a1, "class", "svelte-13ghs9p");
     			add_location(a1, file$2, 30, 41, 712);
-    			attr_dev(p1, "class", "artistdescription svelte-itmvzy");
+    			attr_dev(p1, "class", "artistdescription svelte-13ghs9p");
     			add_location(p1, file$2, 30, 12, 683);
-    			attr_dev(div2, "class", "link_item svelte-itmvzy");
+    			attr_dev(div2, "class", "link_item svelte-13ghs9p");
     			add_location(div2, file$2, 29, 8, 647);
-    			attr_dev(div3, "class", "content svelte-itmvzy");
+    			attr_dev(div3, "class", "content svelte-13ghs9p");
     			add_location(div3, file$2, 19, 4, 372);
-    			attr_dev(main, "class", "svelte-itmvzy");
+    			attr_dev(main, "class", "svelte-13ghs9p");
     			add_location(main, file$2, 12, 0, 217);
     		},
     		l: function claim(nodes) {
@@ -9545,7 +9545,8 @@ var app = (function () {
     	let main;
     	let h1;
     	let t1;
-    	let div;
+    	let div2;
+    	let div0;
     	let p0;
     	let t2;
     	let a0;
@@ -9557,12 +9558,16 @@ var app = (function () {
     	let em1;
     	let t10;
     	let t11;
-    	let p1;
+    	let div1;
+    	let img;
+    	let img_src_value;
     	let t12;
+    	let p1;
+    	let t13;
     	let em2;
-    	let t14;
+    	let t15;
     	let em3;
-    	let t16;
+    	let t17;
 
     	const block = {
     		c: function create() {
@@ -9570,7 +9575,8 @@ var app = (function () {
     			h1 = element("h1");
     			h1.textContent = "Live-Coding SMC 2022 || Entrée gratuite, le 11 juin 2022, au Fil (Saint-Étienne).";
     			t1 = space();
-    			div = element("div");
+    			div2 = element("div");
+    			div0 = element("div");
     			p0 = element("p");
     			t2 = text("Ce concert est proposé dans le cadre des ");
     			a0 = element("a");
@@ -9586,33 +9592,44 @@ var app = (function () {
     			em1.textContent = "live-coding";
     			t10 = text(" stéphanoise, lyonnaise et plus largement francophone.");
     			t11 = space();
+    			div1 = element("div");
+    			img = element("img");
+    			t12 = space();
     			p1 = element("p");
-    			t12 = text("Quatre performances musicales et visuelles d'une demi-heure chacune seront proposées par Ralt144Mi (Rémi Georges), azertype (Baya), Jules Cipher (Elie Gavoty), Léon Denise (");
+    			t13 = text("Quatre performances musicales et visuelles d'une demi-heure chacune seront proposées par Ralt144Mi (Rémi Georges), azertype (Baya), Jules Cipher (Elie Gavoty), Léon Denise (");
     			em2 = element("em");
     			em2.textContent = "idem.";
-    			t14 = text(") et Raphaël Forment (Bubobubo). Chacune présentera une approche singulière du ");
+    			t15 = text(") et Raphaël Forment (Bubobubo). Chacune présentera une approche singulière du ");
     			em3 = element("em");
     			em3.textContent = "live-coding";
-    			t16 = text("; pratique que chaque musicien s'approprie selon son intérêt.");
-    			attr_dev(h1, "class", "title svelte-1o77a36");
+    			t17 = text("; pratique que chacun s'approprie selon son intérêt. Machines, visuels génératifs, DIY, patterns algorithmiques, etc...");
+    			attr_dev(h1, "class", "title svelte-15d8yus");
     			add_location(h1, file$1, 4, 4, 31);
     			attr_dev(a0, "href", "https://smc22.grame.fr/");
-    			attr_dev(a0, "class", "svelte-1o77a36");
-    			add_location(a0, file$1, 6, 66, 232);
-    			add_location(em0, file$1, 6, 114, 280);
+    			attr_dev(a0, "class", "svelte-15d8yus");
+    			add_location(a0, file$1, 7, 70, 257);
+    			add_location(em0, file$1, 7, 118, 305);
     			attr_dev(a1, "href", "https://cookie.paris/");
-    			attr_dev(a1, "class", "svelte-1o77a36");
-    			add_location(a1, file$1, 6, 379, 545);
-    			add_location(em1, file$1, 6, 482, 648);
-    			attr_dev(p0, "class", "words svelte-1o77a36");
-    			add_location(p0, file$1, 6, 8, 174);
-    			add_location(em2, file$1, 8, 198, 926);
-    			add_location(em3, file$1, 8, 291, 1019);
-    			attr_dev(p1, "class", "words svelte-1o77a36");
-    			add_location(p1, file$1, 8, 8, 736);
-    			attr_dev(div, "class", "explication svelte-1o77a36");
-    			add_location(div, file$1, 5, 4, 140);
-    			attr_dev(main, "class", "svelte-1o77a36");
+    			attr_dev(a1, "class", "svelte-15d8yus");
+    			add_location(a1, file$1, 7, 383, 570);
+    			add_location(em1, file$1, 7, 486, 673);
+    			attr_dev(p0, "class", "words svelte-15d8yus");
+    			add_location(p0, file$1, 7, 12, 199);
+    			attr_dev(div0, "class", "left svelte-15d8yus");
+    			add_location(div0, file$1, 6, 8, 168);
+    			if (!src_url_equal(img.src, img_src_value = "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/keyboard_detourage.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "keyboard");
+    			attr_dev(img, "class", "svelte-15d8yus");
+    			add_location(img, file$1, 11, 12, 807);
+    			attr_dev(div1, "class", "right svelte-15d8yus");
+    			add_location(div1, file$1, 10, 8, 775);
+    			attr_dev(div2, "class", "split svelte-15d8yus");
+    			add_location(div2, file$1, 5, 4, 140);
+    			add_location(em2, file$1, 15, 210, 1180);
+    			add_location(em3, file$1, 15, 303, 1273);
+    			attr_dev(p1, "class", "words svelte-15d8yus");
+    			add_location(p1, file$1, 15, 20, 990);
+    			attr_dev(main, "class", "svelte-15d8yus");
     			add_location(main, file$1, 3, 0, 20);
     		},
     		l: function claim(nodes) {
@@ -9622,8 +9639,9 @@ var app = (function () {
     			insert_dev(target, main, anchor);
     			append_dev(main, h1);
     			append_dev(main, t1);
-    			append_dev(main, div);
-    			append_dev(div, p0);
+    			append_dev(main, div2);
+    			append_dev(div2, div0);
+    			append_dev(div0, p0);
     			append_dev(p0, t2);
     			append_dev(p0, a0);
     			append_dev(p0, t4);
@@ -9633,13 +9651,16 @@ var app = (function () {
     			append_dev(p0, t8);
     			append_dev(p0, em1);
     			append_dev(p0, t10);
-    			append_dev(div, t11);
-    			append_dev(div, p1);
-    			append_dev(p1, t12);
+    			append_dev(div2, t11);
+    			append_dev(div2, div1);
+    			append_dev(div1, img);
+    			append_dev(main, t12);
+    			append_dev(main, p1);
+    			append_dev(p1, t13);
     			append_dev(p1, em2);
-    			append_dev(p1, t14);
+    			append_dev(p1, t15);
     			append_dev(p1, em3);
-    			append_dev(p1, t16);
+    			append_dev(p1, t17);
     		},
     		p: noop,
     		i: noop,
