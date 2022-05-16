@@ -1,15 +1,15 @@
 const posters = {
-    bleu: "./photos/affiches/poster1.png",
-    jaune: "./photos/affiches/poster2.png",
-    orange: "./photos/affiches/poster3.png",
+    bleu: "/public/photos/affiches/poster1.png",
+    jaune: "/public/photos/affiches/poster2.png",
+    orange: "/public/photos/affiches/poster3.png",
 }
 
 const pictures = {
-    remi: "./photos/ralt144mi.jpeg",
-    elie: "./photos/elie.JPG",
-    raph: "./photos/lezgo.png",
-    baya: "./photos/azertype.png",
-    leon: "./photos/photo_leon.png",
+    remi: "/public/photos/ralt144mi.jpeg",
+    elie: "/public/photos/elie.JPG",
+    raph: "/public/photos/lezgo.png",
+    baya: "/public/photos/azertype.png",
+    leon: "/public/photos/photo_leon.png",
 }
 
 const videos = {
