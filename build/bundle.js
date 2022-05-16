@@ -9687,26 +9687,25 @@ var app = (function () {
     }
 
     const posters = {
-        bleu: "/photos/affiches/poster1.png",
-        jaune: "/photos/affiches/poster2.png",
-        orange: "/photos/affiches/poster3.png",
+        bleu: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/affiches/poster3.png",
+        jaune: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/affiches/poster1.png",
+        orange: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/affiches/poster2.png",
     };
 
     const pictures = {
-        remi: "/photos/ralt144mi.jpeg",
-        elie: "/photos/elie.JPG",
-        raph: "/photos/lezgo.png",
-        baya: "/photos/azertype.png",
-        leon: "/photos/photo_leon.png",
+        remi: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/ralt144mi.jpeg",
+        elie: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/elie.JPG",
+        raph: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/lezgo.png",
+        baya: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/azertype.png",
+        leon: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/photo_leon.png",
     };
 
     const videos = {
-        // This won't work for now but I'll get to it.
-        raph: "/videos/Bubo.webm",
-        remi: "/videos/ralt144mi.webm",
-        elie: "/videos/elie.webm",
-        baya: "/videos/azertype.webm",
-        leon: "/videos/leon.mp4",
+        raph: "./videos/Bubo.webm",
+        remi: "./videos/ralt144mi.webm",
+        elie: "./videos/elie.webm",
+        baya: "./videos/azertype.webm",
+        leon: "./videos/leon.mp4",
     };
 
     const links = {
