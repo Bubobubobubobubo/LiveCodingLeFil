@@ -1,21 +1,18 @@
 const posters = {
-    bleu: "/public/photos/affiches/poster1.png",
-    jaune: "/public/photos/affiches/poster2.png",
-    orange: "/public/photos/affiches/poster3.png",
+    bleu: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/affiches/poster3.png",
+    jaune: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/affiches/poster1.png",
+    orange: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/affiches/poster2.png",
 }
 
 const pictures = {
-    remi: "/public/photos/ralt144mi.jpeg",
-    elie: "/public/photos/elie.JPG",
-    raph: "/public/photos/lezgo.png",
-    baya: "/public/photos/azertype.png",
-    leon: "/public/photos/photo_leon.png",
+    remi: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/ralt144mi.jpeg",
+    elie: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/elie.JPG",
+    raph: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/lezgo.png",
+    baya: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/azertype.png",
+    leon: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/leon.jpeg",
 }
 
 const videos = {
-    // This won't work for now but I'll get to it.
-    // Not sure if I should compress the hell out
-    // of them or host them on a server somewhere.
     raph: "./videos/Bubo.webm",
     remi: "./videos/ralt144mi.webm",
     elie: "./videos/elie.webm",
