@@ -9,7 +9,7 @@ const pictures = {
     elie: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/elie.JPG",
     raph: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/lezgo.png",
     baya: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/azertype.png",
-    leon: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/leon.jpeg",
+    leon: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/photo_leon.png",
 }
 
 const videos = {
