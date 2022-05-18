@@ -38720,65 +38720,65 @@ var app = (function () {
     			button22 = element("button");
     			button22.textContent = "*2";
     			attr_dev(button0, "class", "divider svelte-my25pr");
-    			add_location(button0, file$1, 188, 12, 6098);
+    			add_location(button0, file$1, 188, 12, 6099);
     			attr_dev(button1, "class", "divider svelte-my25pr");
-    			add_location(button1, file$1, 190, 12, 6242);
+    			add_location(button1, file$1, 190, 12, 6243);
     			attr_dev(button2, "class", "divider svelte-my25pr");
-    			add_location(button2, file$1, 192, 12, 6386);
+    			add_location(button2, file$1, 192, 12, 6387);
     			attr_dev(button3, "class", "divider svelte-my25pr");
-    			add_location(button3, file$1, 198, 12, 6698);
+    			add_location(button3, file$1, 198, 12, 6699);
     			attr_dev(div0, "class", "track svelte-my25pr");
-    			add_location(div0, file$1, 180, 8, 5829);
+    			add_location(div0, file$1, 180, 8, 5830);
     			attr_dev(button4, "class", "divider svelte-my25pr");
-    			add_location(button4, file$1, 215, 12, 7269);
+    			add_location(button4, file$1, 215, 12, 7270);
     			attr_dev(button5, "class", "divider svelte-my25pr");
-    			add_location(button5, file$1, 217, 12, 7412);
+    			add_location(button5, file$1, 217, 12, 7413);
     			attr_dev(button6, "class", "divider svelte-my25pr");
-    			add_location(button6, file$1, 219, 12, 7559);
+    			add_location(button6, file$1, 219, 12, 7560);
     			attr_dev(button7, "class", "divider svelte-my25pr");
-    			add_location(button7, file$1, 225, 12, 7874);
+    			add_location(button7, file$1, 225, 12, 7875);
     			attr_dev(div1, "class", "track svelte-my25pr");
-    			add_location(div1, file$1, 207, 8, 6998);
+    			add_location(div1, file$1, 207, 8, 6999);
     			attr_dev(button8, "class", "divider svelte-my25pr");
-    			add_location(button8, file$1, 242, 12, 8448);
+    			add_location(button8, file$1, 242, 12, 8449);
     			attr_dev(button9, "class", "divider svelte-my25pr");
-    			add_location(button9, file$1, 244, 12, 8595);
+    			add_location(button9, file$1, 244, 12, 8596);
     			attr_dev(button10, "class", "divider svelte-my25pr");
-    			add_location(button10, file$1, 246, 12, 8742);
+    			add_location(button10, file$1, 246, 12, 8743);
     			attr_dev(button11, "class", "divider svelte-my25pr");
-    			add_location(button11, file$1, 252, 12, 9057);
+    			add_location(button11, file$1, 252, 12, 9058);
     			attr_dev(div2, "class", "track svelte-my25pr");
-    			add_location(div2, file$1, 234, 8, 8177);
+    			add_location(div2, file$1, 234, 8, 8178);
     			attr_dev(button12, "class", "divider svelte-my25pr");
-    			add_location(button12, file$1, 269, 12, 9631);
+    			add_location(button12, file$1, 269, 12, 9632);
     			attr_dev(button13, "class", "divider svelte-my25pr");
-    			add_location(button13, file$1, 271, 12, 9778);
+    			add_location(button13, file$1, 271, 12, 9779);
     			attr_dev(button14, "class", "divider svelte-my25pr");
-    			add_location(button14, file$1, 273, 12, 9925);
+    			add_location(button14, file$1, 273, 12, 9926);
     			attr_dev(button15, "class", "divider svelte-my25pr");
-    			add_location(button15, file$1, 279, 12, 10240);
+    			add_location(button15, file$1, 279, 12, 10241);
     			attr_dev(div3, "class", "track svelte-my25pr");
-    			add_location(div3, file$1, 261, 8, 9360);
+    			add_location(div3, file$1, 261, 8, 9361);
     			attr_dev(div4, "class", "sequencer svelte-my25pr");
-    			add_location(div4, file$1, 177, 4, 5764);
+    			add_location(div4, file$1, 177, 4, 5765);
     			attr_dev(button16, "class", "play svelte-my25pr");
-    			add_location(button16, file$1, 291, 8, 10545);
+    			add_location(button16, file$1, 291, 8, 10546);
     			attr_dev(button17, "class", "play svelte-my25pr");
-    			add_location(button17, file$1, 292, 8, 10647);
+    			add_location(button17, file$1, 292, 8, 10648);
     			attr_dev(button18, "class", "play svelte-my25pr");
-    			add_location(button18, file$1, 293, 8, 10722);
+    			add_location(button18, file$1, 293, 8, 10723);
     			attr_dev(button19, "class", "play svelte-my25pr");
-    			add_location(button19, file$1, 294, 8, 10797);
+    			add_location(button19, file$1, 294, 8, 10798);
     			attr_dev(button20, "class", "play svelte-my25pr");
-    			add_location(button20, file$1, 295, 8, 10874);
+    			add_location(button20, file$1, 295, 8, 10875);
     			attr_dev(button21, "class", "play svelte-my25pr");
-    			add_location(button21, file$1, 296, 8, 10951);
+    			add_location(button21, file$1, 296, 8, 10952);
     			attr_dev(button22, "class", "play svelte-my25pr");
-    			add_location(button22, file$1, 297, 8, 11030);
+    			add_location(button22, file$1, 297, 8, 11031);
     			attr_dev(div5, "class", "ui svelte-my25pr");
-    			add_location(div5, file$1, 290, 4, 10520);
+    			add_location(div5, file$1, 290, 4, 10521);
     			attr_dev(main, "class", "svelte-my25pr");
-    			add_location(main, file$1, 176, 0, 5753);
+    			add_location(main, file$1, 176, 0, 5754);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -39135,7 +39135,7 @@ var app = (function () {
     						C3: "tom1.wav",
     						D3: "tom2.wav"
     					},
-    					baseUrl: "/raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/gh-pages/photos/"
+    					baseUrl: "/raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/gh-pages/samples/"
     				}).toDestination();
     		}
 
