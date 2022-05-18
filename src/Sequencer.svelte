@@ -53,7 +53,7 @@
                     B2:"sd2.wav",
                     C3:"tom1.wav",
                     D3:"tom2.wav"},
-            	baseUrl: "/raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/gh-pages/samples/"}).toDestination();
+            	baseUrl: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/samples/"}).toDestination();
         }
         
         trigger() {
