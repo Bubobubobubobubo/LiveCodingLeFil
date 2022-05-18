@@ -104,7 +104,4 @@
         transform: scale(1.0);
         transition: all 0.3s easie-in-out 0.5s;
     }
-
-
-
 </style>

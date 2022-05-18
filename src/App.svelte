@@ -3,6 +3,7 @@
 	import PerformerDescription from './PerformerDescription.svelte';
 	import MoreInformation from './MoreInformation.svelte';
 	import {performers, posters} from './information';
+	import Sequencer from './Sequencer.svelte';
 
     const isMobileUser = () => {
         let check = false;
@@ -16,7 +17,6 @@
 		.sort((a, b) => a.sort - b.sort)
 		.map(({ value }) => value);
 
-
 	let all_titles = [
 		"LIVE-CODING",
 		"ALGORAVE",
@@ -25,7 +25,7 @@
 
 <main>
 	<header>
-        {#if isMobileUser}
+        {#if isMobileUser()}
             <h1 class="bigtitle">:'((((</h1>
         {:else}
 		    <h1 class="bigtitle">{all_titles[Math.floor(Math.random() * 3)]}</h1>
@@ -38,11 +38,14 @@
 		</div>
 	</header>
 
+	<Sequencer />
+
 	<div class="posters">
 		<img src={posters.jaune} alt="poster1">
 		<img src={posters.orange} alt="poster2">
 		<img src={posters.bleu} alt="poster3">
 	</div>
+
 
 	<Tabs>
 		<TabList>
@@ -144,24 +147,6 @@
 		text-align: center;
 	}
 
-	a {
-		color: inherit;
-		justify-content: center;
-		text-align: center;
-	}
-
-	li {
-		font-family: 'terminal_grotesque';
-		list-style-type: none;
-		text-decoration: none;
-	}
-
-	html {
-		font-family: sans-serif;
-		-ms-text-size-adjust: 100%;
-		-webkit-text-size-adjust: 100%;
-	}
-	
 	.venuedate {
 		padding-top: 40px;
 		justify-content: right;
