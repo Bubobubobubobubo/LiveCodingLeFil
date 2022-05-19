@@ -11,6 +11,7 @@
 		.map(({ value }) => value);
 
 	let all_titles = [
+        "RELOAD THE PAGE",
         "EVAROGLA",
 		"ALGORAVE",
         "CIVE-LODING",
