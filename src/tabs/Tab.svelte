@@ -30,7 +30,7 @@
 
 	button {
 		font-family: 'terminal_grotesque';
-		font-size: 40px;
+		font-size: 5.2vh;
 		background: none;
 		border: none;
 		border-bottom: 2px solid #f4af4c;
@@ -44,7 +44,7 @@
 
 	button:hover {
 		animation-duration: 0.2s;
-		font-size: 60px;
+		font-size: 4.5vh;
 		font-family: 'terminal_grotesque_open';
 		font-weight: normal;
 	}

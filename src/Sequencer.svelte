@@ -2,10 +2,12 @@
     import Cell from './Cell.svelte';
     import CellControl from './CellControl.svelte';
     import * as Tone from 'tone';
-    let maxStep = 8;
+import { Time } from 'tone';
+    let maxStep = 11;
     let [toneRunning, transportRunning] = [false, false]
 
     const handleTransport = () => {
+
 
         if (!toneRunning) { 
             // First thing first: turn audio engine on!
@@ -18,11 +20,10 @@
         if (!transportRunning) {
             Tone.Transport.start();
             Tone.Master.volume.value = -12;
-            // Tone.Transport.bpm.value = 450;
             transportRunning = !transportRunning;
-            console.log("Démarrage du séquenceur")
+            const now = Tone.now();
             Tone.Transport.scheduleRepeat(
-                handleSequenceInTime, "8n");
+                handleSequenceInTime, "16n");
         } else {
             Tone.Transport.cancel();
             Tone.Transport.pause();
@@ -33,50 +34,55 @@
 
     class SequencerCell {
 
-        constructor(step_number) {
-            this.on = false;
-            this.active = Math.random() > 0.9? true : false;
-            this.number = step_number;
-            this.instrument = new Tone.Sampler({
-            	urls: { 
-                    C1:"bd1.wav",
-                    D1:"bd2.wav",
-                    E1:"bd3.wav",
-                    F1:"bd4.wav",
-                    G1:"ch1.wav",
-                    A1:"ch2.wav",
-                    B1:"clap.wav", 
-                    C2:"crash.wav",
-                    D2:"oh.wav",
-                    E2:"ride.wav",
-                    F2:"ride2.wav", 
-                    G2:"rim.wav",
-                    A2:"sd1.wav",
-                    B2:"sd2.wav",
-                    C3:"tom1.wav",
-                    D3:"tom2.wav"},
-            	baseUrl: "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/samples/"}).toDestination();
-        }
-        
-        trigger() {
-            let scale = ["C1", "D1", "E1", "F1",
-            "G1", "B1", "C2", "D2", "E2", "F2", "G2",
-            "A2", "B2", "C3", "D3"];
-            let randomNote = scale[Math.floor(Math.random() * scale.length)];
-            this.instrument.triggerAttackRelease(Tone.Frequency(randomNote)
-                    .transpose(12 * Math.floor(Math.random() / 2)), '16n');
+        constructor(step_number, type) {
+            [this.number, this.type] = [step_number, type];
+            [this.on, this.active] = [false, Math.random() > 0.9? true : false];
+            this.sampleURL = "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/samples/";
+            this.samples = {
+                'bassdrum': {C1:"bd1.wav", D1:"bd2.wav", E1:"bd3.wav", F1:"bd4.wav"},
+                'hat': {C1:"ch1.wav", D1:"ch2.wav", E1:"oh.wav", F1:"clap.wav"},
+                'snare': { C1:"sd1.wav", D1:"sd2.wav"},
+                'other': {C1:"crash.wav", D1:"ride.wav", E1:"ride2.wav", F1:"rim.wav",
+                G1:"tom1.wav", A1:"tom2.wav" }};
+            switch (this.type) {
+                case 'bassdrum': 
+                    this.instrument = new Tone.Sampler({
+                        urls: this.samples.bassdrum, baseUrl: this.sampleURL}); break;
+                case 'hat': 
+                    this.instrument = new Tone.Sampler({
+                        urls: this.samples.hat, baseUrl: this.sampleURL}); break;
+                case 'snare': 
+                    this.instrument = new Tone.Sampler({
+                        urls: this.samples.snare, baseUrl: this.sampleURL }); break;
+                case 'other': 
+                    this.instrument = new Tone.Sampler({
+                        urls: this.samples.other, baseUrl: this.sampleURL}); break;
+            }
+            this.filter = new Tone.AutoFilter("2n", 500, 4).start();
+            this.distortion = new Tone.Distortion(0.5);
+            this.reverb = new Tone.Reverb({wet: 0.20, decay: 2});
+            this.pan = new Tone.AutoPanner("1n");
+            this.instrument.chain(this.filter, this.distortion, this.reverb, this.pan, Tone.Destination);
         }
 
-    }
+        randomUrl(sampler) {return sampler.urls.keys()[Math.floor(Math.random() * sampler.keys().length)]}
+        
+        trigger() {
+                // this.instrument.triggerAttackRelease(randomUrl(this.instrument), '16n');
+                let notes = ["C1", "D1", "E1", "F1", "G1", "A1", "B1"];
+                this.instrument.triggerAttackRelease(notes[Math.floor(Math.random() * notes.length)], '1');
+            }
+        }
 
     class SequencerTrack {
 
-        constructor(nb_steps) {
+        constructor(nb_steps, type) {
             [this.step, this.maxStep] = [0, nb_steps];
             [this.mode, this.multiplier] = ['normal', 1];
+            this.type = type;
             this.cells = [];
             for (let i=0; i <= nb_steps; i++) {
-                this.cells.push(new SequencerCell(i))
+                this.cells.push(new SequencerCell(i, type))
             }
         }
 
@@ -133,10 +139,10 @@
         }
 
     // Declaring new tracks to be shown on the screen
-    let track = new SequencerTrack(maxStep);
-    let track2 = new SequencerTrack(maxStep);
-    let track3 = new SequencerTrack(maxStep);
-    let track4 = new SequencerTrack(maxStep);
+    let track = new SequencerTrack(maxStep, 'bassdrum');
+    let track2 = new SequencerTrack(maxStep, 'hat');
+    let track3 = new SequencerTrack(maxStep, 'snare');
+    let track4 = new SequencerTrack(maxStep, 'other');
     let activeTracks = [track, track2, track3, track4];
 
     // This function is handling the update and redraw of sequencers

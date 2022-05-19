@@ -27,7 +27,6 @@
 		</div>
 	</header>
 
-	<Sequencer />
 
 	<div class="posters">
 		<img src={posters.jaune} alt="poster1">
@@ -55,6 +54,8 @@
 			</TabPanel>
 		{/each}
 	</Tabs>
+
+	<Sequencer />
 
 	<MoreInformation />
 </main>

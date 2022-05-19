@@ -64,7 +64,7 @@ const performers = [
         pseudo: "Léon Denise",
         fullname: "Léon Denise",
         video: videos.leon, link: links.leon,
-        description: "Programmation d'effets visuels improvisées, entre sculptures fractals mathématiques, filtres d'images animés et distorsions de personnages 3D.",
+        description: "Programmation d'effets visuels improvisées, entre sculptures fractales mathématiques, filtres d'images animés et distorsions de personnages 3D.",
         url_portrait: pictures.leon,
         id: 5,
     },

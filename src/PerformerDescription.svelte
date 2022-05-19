@@ -1,6 +1,4 @@
 <script>
-    import VideoPlayer from 'svelte-video-player';
-
     export let name;
     export let pseudo;
     export let description;
@@ -17,20 +15,15 @@
         <a href={link} class="name_with_link">{pseudo}</a>
     </div>
 
-    <div class="content">
+    <img src={url_portrait} alt="performer_picture">
 
-        <span class="video_item">
-            <VideoPlayer width=800 height=400 poster={url_portrait} source={video} />
-        </span>
-
-        <div class="text_item">
-            <p class="artistdescription">{description}</p>
-        </div>
-
-        <div class="link_item">
-            <p class="artistdescription"><a href={link}>Site internet</a></p>
-        </div>
+    <div class="text_item">
+        <p class="artistdescription">{description}</p>
     </div>
+    <div class="link_item">
+        <p class="link_description"><a href={link}>Site internet</a></p>
+    </div>
+
 </main>
 
 <style>
@@ -44,40 +37,28 @@
     }
 
 	@font-face {
-     	font-family: 'terminal_grotesque_open';
-    	src: url('./fonts/terminal-grotesque_open.otf');
-    	font-weight: normal;
-    	font-style: normal;
+        font-family: 'terminal_grotesque_open';
+        src: url('./fonts/terminal-grotesque_open.otf');font-weight: normal;
+        font-style: normal;
 	}
-
-    .video {
-        max-width: 100%;
-        height: auto;
-    }
 
     .content {
         display: flex;
     }
 
-    .video_item {
-        width: 30%;
-    }
-
     .text_item {
-        width: 60%;
-    }
-
-    .link_item {
-        width: 10%;
+        text-justify: inter-word;
+        justify-content: center;
+        padding: 10px;
     }
 
     a {
-        font-size: 20px;
+        font-size: 5vw;
         text-decoration: none;
         color: black;
     }
 
-    main:hover {
+    main:hover {
         border: 20px dashed white;
     }
 
@@ -92,16 +73,40 @@
         width: 100%;
     }
 
+    .artistdescription {
+        font-size: 5vh;
+        padding: 2vw;
+        margin-left: 3.5vh;
+        margin-top: -2.45vw;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
     .artistdescription:first-letter {
-        font-size: 80px;
+        font-size: 9.5vh;
+        font-weight: normal;
         font-family: 'terminal_grotesque_open';
     }
 
-    .artistdescription {
-        margin: 0px; padding-left: 20px; padding-right: 20px;
-        float: none; text-align: justify; text-justify: inter-word;
-        font-size: 30px;
-        /* max-height: 100px; */
+
+    .link_item {
+        font-size: 4vw;
+        margin: 28px;
+        border: 1vh dashed black;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .link_description:first-letter {
+        font-size: 7vw;
+        font-family: 'terminal_grotesque_open';
+        padding-left: 30px;
+    }
+
+    .link_item:hover {
+        background: white;
+        color: black;
+        transition-duration: 0.4s;
     }
 
     .box_header {
@@ -110,14 +115,14 @@
 
     .artistname, .name_with_link {
         font-weight: normal; color: black; 
-        padding-top: 0px; justify-content: space-between;
-        float: left; font-size: 40px;
+        padding-top: 1vh; justify-content: space-between;
+        float: left; font-size: 5.2vh;
     }
 
     .name_with_link {
         font-family: 'terminal_grotesque';
         display:inline-block; vertical-align:top;
-        padding-top: 30px;
+        padding-top: 4.6vh;
     }
 
     .artistname {
@@ -126,4 +131,15 @@
         vertical-align: top;
     }
 
+    img {
+        border: 5px dashed black;
+        margin: 5px;
+        float: left;
+        display: inline;
+        justify-content: center;
+        margin-left: 30px;
+        margin-right: 20px;
+        max-width: 20vw;
+        max-height: 20vh;
+    }
 </style>
