@@ -1,7 +1,8 @@
 <script>
-    import Cell from './Cell.svelte'
+    import Cell from './Cell.svelte';
+    import CellControl from './CellControl.svelte';
     import * as Tone from 'tone';
-    let maxStep = 15;
+    let maxStep = 8;
     let [toneRunning, transportRunning] = [false, false]
 
     const handleTransport = () => {
@@ -13,6 +14,7 @@
 
         // Transport management: cancel because 
         // scheduleRepeat can overlap!
+
         if (!transportRunning) {
             Tone.Transport.start();
             Tone.Master.volume.value = -12;
@@ -180,28 +182,10 @@
         <!-- Sequencer n°1  -->
         <div class="track">
             {#each track.cells as c}
-            <Cell 
-                on={c.on}
-                on:click={() => {disableCell(track, c.number)}}
-                active={c.active}
-                number={c.number} />
+            <Cell on={c.on} on:click={() => {disableCell(track, c.number)}}
+                active={c.active} number={c.number} />
             {/each}
-            <button class="divider" on:click={() => {
-                track.updateMultiplier(2, 'decrease'); track = track;}}>Decrease</button>
-            <button class="divider" on:click={() => {
-                track.updateMultiplier(2, 'increase'); track = track;}}>Increase</button>
-            <button class="divider" on:click={() => {
-                let chooseOne = ['normal', 'reverse', 'random'];
-                chooseOne = chooseOne[Math.floor(Math.random() * chooseOne.length)];
-                track.mode = chooseOne;
-                track = track;
-            }}>Roll a dice!</button>
-            <button class="divider" on:click={() => {
-                track.cells.forEach((cell) => {
-                    cell.active = Math.random() > 0.6 ? true: false;
-                });
-                track = track;
-            }}>Randomize</button>
+            <CellControl track={track}/>
         </div>
 
         <!-- Sequencer n°2  -->
@@ -213,22 +197,7 @@
                 active={c.active}
                 number={c.number} />
             {/each}
-            <button class="divider" on:click={
-            () => {track2.updateMultiplier(2, 'decrease'); track2 = track2;}}>Decrease</button>
-            <button class="divider" on:click={() => {
-                track2.updateMultiplier(2, 'increase'); track2 = track2;}}>Increase</button>
-            <button class="divider" on:click={() => {
-                let chooseOne = ['normal', 'reverse', 'random'];
-                chooseOne = chooseOne[Math.floor(Math.random() * chooseOne.length)];
-                track2.mode = chooseOne;
-                track2 = track2;
-            }}>Roll a dice!</button>
-            <button class="divider" on:click={() => {
-                track2.cells.forEach((cell) => {
-                    cell.active = Math.random() > 0.6 ? true: false;
-                });
-                track2 = track2;
-            }}>Randomize</button>
+            <CellControl track={track2}/>
         </div>
 
         <!-- Sequencer n°3  -->
@@ -240,22 +209,7 @@
                 active={c.active}
                 number={c.number} />
             {/each}
-            <button class="divider" on:click={() => {
-                track3.updateMultiplier(2, 'decrease'); track3 = track3;}}>Decrease</button>
-            <button class="divider" on:click={() => {
-                track3.updateMultiplier(2, 'increase'); track3 = track3;}}>Increase</button>
-            <button class="divider" on:click={() => {
-                let chooseOne = ['normal', 'reverse', 'random'];
-                chooseOne = chooseOne[Math.floor(Math.random() * chooseOne.length)];
-                track3.mode = chooseOne;
-                track3 = track3;
-            }}>Roll a dice!</button>
-            <button class="divider" on:click={() => {
-                track3.cells.forEach((cell) => {
-                    cell.active = Math.random() > 0.6 ? true: false;
-                });
-                track3 = track3;
-            }}>Randomize</button>
+            <CellControl track={track3}/>
         </div>
 
         <!-- Sequencer n°4  -->
@@ -267,35 +221,18 @@
                 active={c.active}
                 number={c.number} />
             {/each}
-            <button class="divider" on:click={() => {
-                track4.updateMultiplier(2, 'decrease'); track4 = track4;}}>Decrease</button>
-            <button class="divider" on:click={() => {
-                track4.updateMultiplier(2, 'increase'); track4 = track4;}}>Increase</button>
-            <button class="divider" on:click={() => {
-                let chooseOne = ['normal', 'reverse', 'random'];
-                chooseOne = chooseOne[Math.floor(Math.random() * chooseOne.length)];
-                track4.mode = chooseOne;
-                track4 = track4;
-            }}>Roll a dice!</button>
-            <button class="divider" on:click={() => {
-                track4.cells.forEach((cell) => {
-                    cell.active = Math.random() > 0.6 ? true: false;
-                });
-                track4 = track4;
-            }}>Randomize</button>
-
+            <CellControl track={track4}/>
         </div>
-
     </div>
 
     <div class="ui">
-        <button class="play" on:click={handleTransport}>{transportRunning? "Pause" : "Play"}</button>
-        <button class="play" on:click={() => {bpmUp(1, 'up')}}>+1</button>
-        <button class="play" on:click={() => {bpmUp(5, 'up')}}>+5</button>
-        <button class="play" on:click={() => {bpmUp(1, 'down')}}>-1</button>
-        <button class="play" on:click={() => {bpmUp(5, 'down')}}>-5</button>
-        <button class="play" on:click={() => {bpmUp(1, 'divide')}}>/2</button>
-        <button class="play" on:click={() => {bpmUp(5, 'multiply')}}>*2</button>
+        <button class="boxed_things" on:click={handleTransport}>{transportRunning? "Pause" : "Play"}</button>
+        <button class="boxed_things" on:click={() => {bpmUp(1, 'up')}}>+1</button>
+        <button class="boxed_things" on:click={() => {bpmUp(5, 'up')}}>+5</button>
+        <button class="boxed_things" on:click={() => {bpmUp(1, 'down')}}>-1</button>
+        <button class="boxed_things" on:click={() => {bpmUp(5, 'down')}}>-5</button>
+        <button class="boxed_things" on:click={() => {bpmUp(1, 'divide')}}>/2</button>
+        <button class="boxed_things" on:click={() => {bpmUp(5, 'multiply')}}>*2</button>
     </div>
 
 </main>
@@ -317,9 +254,17 @@
     	src: url('./fonts/terminal-grotesque_open.otf');
     	font-weight: normal;
     	font-style: normal;
+        font-size: 1vw;
 	}
+
+    :root {
+        --cell-border-size: 0.5vh;
+        --boxes-font-size: 1.8vh;
+    }
+
     .ui {
         display: flex;
+        justify-content: center;
     }
 
     .play {
@@ -328,23 +273,34 @@
         width: 60%;
         background: white;
         color: black;
-        border: 5px dashed black;
+        border: var(--cell-border-size) dashed black;
+        font-size: var(--boxes-font-size);
     }
 
-    .divider {
-        margin: 10px 10px;
-        display: inline;
-        width: 100px;
-        height: 40px;
-        background: white;
-        color: black;
+    .boxed_things {
+        background: white; color: black;
         border: 5px dashed black;
+        width: fit-content; height: fit-content;
+        margin: 1vw 1vh;
+        font-size: 2.5vh;
+    }
+
+    .controls {
+        background: white; color: black;
+        border: var(--cell-border-size) dashed black;
+        width: fit-content; 
+        margin: 1vw 1vh;
+        font-size: var(--boxes-font-size);
+    }
+    
+    .controls_container {
+        display: inline;
     }
 
 
     .track {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     p {display: inline}
@@ -356,7 +312,7 @@
     main {
         font-family: 'terminal_grotesque_open';
         font-weight: normal;
+        font-size: 2vmin;
     }
-
 
 </style>

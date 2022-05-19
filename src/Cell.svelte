@@ -14,6 +14,13 @@
 
 <style>
 
+    :root {
+        --cell-width: 4vh;
+        --cell-height: 4vh;
+        --inactive-cell-width: 2.5vw;
+        --inactive-cell-height: 2.5vw;
+        --cell-border-size: 0.5vh;
+    }
 
     main{
         display: inline;
@@ -22,28 +29,28 @@
     button {
         background: white;
         color: black;
-        border: 5px dashed black;
-        width: 3em; height: 3em;
+        border: var(--cell-border-size) dashed black;
+        width: var(--cell-width); height: var(--cell-height);
         margin: 0px 5px;
         transition-duration: 0.4s;
     }
 
     .active{
         background: yellow;
-        width: 50px; height: 50px;
+        width: var(--cell-width); height: var(--cell-height);
         transition-duration: 0.4s;
     }
 
     .inactive{
         background: yellow;
-        width: 40px; height: 40px;
+        width: var(--inactive-cell-width); height: var(--inactive-cell-height);
         transition-duration: 0.4s;
     }
 
     .disabled{
-        background: darkgrey; 
-        transform: rotate(45deg);
-        width: 40px; height: 40px;
+        background:  #F50E02;
+        transform: rotate(10deg);
+        width: var(--cell-width); height: var(--cell-height);
         transition-duration: 0.4s;
     }
 

@@ -3,17 +3,9 @@
 
 <main>
     <h1 class="title">Live-Coding SMC 2022 || Entrée gratuite, le 11 juin 2022, au Fil (Saint-Étienne).</h1>
-    <div class="split">
-        <div class="left">
-            <p class="words">Ce concert est proposé dans le cadre des <a href="https://smc22.grame.fr/">SMC 2022</a> (<em>Sound and Music Computing Conference</em>) organisées par le laboratoire ECLLA de l'université Jean Monnet de Saint-Étienne, par le GRAME - Centre de Création Musicale, l'INRIA et autres partenaires institutionnels. Conçu en collaboration avec les parisiens du <a href="https://cookie.paris/">Cookie Collective</a>, ce concert met en valeur le travail de la scène <em>live-coding</em> stéphanoise, lyonnaise et plus largement francophone.</p>
-
-       </div>
-        <div class="right">
-            <img src="https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/keyboard_detourage.png" alt="keyboard">
-
-        </div>
-    </div>
-                    <p class="words">Quatre performances musicales et visuelles d'une demi-heure chacune seront proposées par Ralt144Mi (Rémi Georges), azertype (Baya), Jules Cipher (Elie Gavoty), Léon Denise (<em>idem.</em>) et Raphaël Forment (Bubobubo). Chacune présentera une approche singulière du <em>live-coding</em>; pratique que chacun s'approprie selon son intérêt. Machines, visuels génératifs, DIY, patterns algorithmiques, etc...</p>
+    <p class="words">Ce concert est proposé dans le cadre des <a href="https://smc22.grame.fr/">SMC 2022</a> (<em>Sound and Music Computing Conference</em>) organisées par le laboratoire ECLLA de l'université Jean Monnet de Saint-Étienne, par le GRAME - Centre de Création Musicale, l'INRIA et autres partenaires institutionnels. Conçu en collaboration avec les parisiens du <a href="https://cookie.paris/">Cookie Collective</a>, ce concert met en valeur le travail de la scène <em>live-coding</em> stéphanoise, lyonnaise et plus largement francophone.</p>
+    <!-- <img src="https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/photos/keyboard_detourage.png" alt="keyboard"> -->
+    <p class="words">Quatre performances musicales et visuelles d'une demi-heure chacune seront proposées par Ralt144Mi (Rémi Georges), azertype (Baya), Jules Cipher (Elie Gavoty), Léon Denise (<em>idem.</em>) et Raphaël Forment (Bubobubo). Chacune présentera une approche singulière du <em>live-coding</em>; pratique que chacun s'approprie selon son intérêt. Machines, visuels génératifs, DIY, patterns algorithmiques, etc...</p>
 
 
 </main>
@@ -57,8 +49,8 @@
         margin-top: 50px;
         margin-left: 50px;
         display: inline;
-        max-width: 400px;
-        max-height: 300px;
+        max-width: 20%;
+        max-height: 20%;
         padding-left: 20px;
         opacity: 0.9;
     }
