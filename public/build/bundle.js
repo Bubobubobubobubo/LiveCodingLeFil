@@ -31336,7 +31336,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (41:4) <Tab>
+    // (45:4) <Tab>
     function create_default_slot_3(ctx) {
     	let t_value = /*p*/ ctx[2].pseudo + "";
     	let t;
@@ -31358,14 +31358,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(41:4) <Tab>",
+    		source: "(45:4) <Tab>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:3) {#each shuffled as p}
+    // (44:3) {#each shuffled as p}
     function create_each_block_1(ctx) {
     	let tab;
     	let current;
@@ -31413,14 +31413,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(40:3) {#each shuffled as p}",
+    		source: "(44:3) {#each shuffled as p}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (39:2) <TabList>
+    // (43:2) <TabList>
     function create_default_slot_2(ctx) {
     	let each_1_anchor;
     	let current;
@@ -31509,14 +31509,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(39:2) <TabList>",
+    		source: "(43:2) <TabList>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (46:3) <TabPanel>
+    // (50:3) <TabPanel>
     function create_default_slot_1(ctx) {
     	let performerdescription;
     	let t;
@@ -31564,14 +31564,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(46:3) <TabPanel>",
+    		source: "(50:3) <TabPanel>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (45:2) {#each shuffled as p}
+    // (49:2) {#each shuffled as p}
     function create_each_block(ctx) {
     	let tabpanel;
     	let current;
@@ -31619,14 +31619,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(45:2) {#each shuffled as p}",
+    		source: "(49:2) {#each shuffled as p}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:1) <Tabs>
+    // (42:1) <Tabs>
     function create_default_slot(ctx) {
     	let tablist;
     	let t;
@@ -31744,7 +31744,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(38:1) <Tabs>",
+    		source: "(42:1) <Tabs>",
     		ctx
     	});
 
@@ -31826,35 +31826,35 @@ var app = (function () {
     			t14 = space();
     			create_component(moreinformation.$$.fragment);
     			attr_dev(h1, "class", "bigtitle svelte-14y5ur2");
-    			add_location(h1, file, 20, 2, 535);
+    			add_location(h1, file, 24, 2, 623);
     			attr_dev(h20, "class", "subtitle svelte-14y5ur2");
-    			add_location(h20, file, 21, 2, 607);
+    			add_location(h20, file, 25, 2, 695);
     			attr_dev(h21, "class", "subtitle svelte-14y5ur2");
-    			add_location(h21, file, 22, 2, 707);
+    			add_location(h21, file, 26, 2, 795);
     			attr_dev(h22, "class", "venuedate svelte-14y5ur2");
-    			add_location(h22, file, 24, 3, 815);
+    			add_location(h22, file, 28, 3, 903);
     			attr_dev(h23, "class", "precision svelte-14y5ur2");
-    			add_location(h23, file, 25, 3, 877);
+    			add_location(h23, file, 29, 3, 965);
     			attr_dev(div0, "class", "information svelte-14y5ur2");
-    			add_location(div0, file, 23, 2, 786);
+    			add_location(div0, file, 27, 2, 874);
     			attr_dev(header, "class", "svelte-14y5ur2");
-    			add_location(header, file, 19, 1, 524);
+    			add_location(header, file, 23, 1, 612);
     			if (!src_url_equal(img0.src, img0_src_value = information.posters.jaune)) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "poster1");
     			attr_dev(img0, "class", "svelte-14y5ur2");
-    			add_location(img0, file, 31, 2, 984);
+    			add_location(img0, file, 35, 2, 1072);
     			if (!src_url_equal(img1.src, img1_src_value = information.posters.orange)) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "poster2");
     			attr_dev(img1, "class", "svelte-14y5ur2");
-    			add_location(img1, file, 32, 2, 1026);
+    			add_location(img1, file, 36, 2, 1114);
     			if (!src_url_equal(img2.src, img2_src_value = information.posters.bleu)) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "poster3");
     			attr_dev(img2, "class", "svelte-14y5ur2");
-    			add_location(img2, file, 33, 2, 1069);
+    			add_location(img2, file, 37, 2, 1157);
     			attr_dev(div1, "class", "posters svelte-14y5ur2");
-    			add_location(div1, file, 30, 1, 960);
+    			add_location(div1, file, 34, 1, 1048);
     			attr_dev(main, "class", "svelte-14y5ur2");
-    			add_location(main, file, 18, 0, 516);
+    			add_location(main, file, 22, 0, 604);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -31932,7 +31932,17 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('App', slots, []);
     	let shuffled = information.performers.map(value => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value);
-    	let all_titles = ["LIVE-CODING", "ALGORAVE", "ON THE FLY"];
+
+    	let all_titles = [
+    		"EVAROGLA",
+    		"ALGORAVE",
+    		"CIVE-LODING",
+    		"LIVE-CODING",
+    		"GNIDOC-EVIL",
+    		"ON THE FLY",
+    		"YLF EHT NO"
+    	];
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {

@@ -11,11 +11,13 @@
 		.map(({ value }) => value);
 
 	let all_titles = [
-        "ELGOREVE",
+        "EVAROGLA",
+		"ALGORAVE",
         "CIVE-LODING",
 		"LIVE-CODING",
-		"ALGORAVE",
-		"ON THE FLY"]
+		"GNIDOC-EVIL",
+        "ON THE FLY",
+        "YLF EHT NO"]
 </script>
 
 <main>
