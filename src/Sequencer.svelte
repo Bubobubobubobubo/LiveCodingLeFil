@@ -34,7 +34,7 @@ import { Time } from 'tone';
 
     class SequencerCell {
 
-        constructor(step_number, type) {
+        constructor(step_number, type, parent) {
             [this.number, this.type] = [step_number, type];
             [this.on, this.active] = [false, Math.random() > 0.9? true : false];
             this.sampleURL = "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/samples/";
@@ -58,11 +58,10 @@ import { Time } from 'tone';
                     this.instrument = new Tone.Sampler({
                         urls: this.samples.other, baseUrl: this.sampleURL}); break;
             }
-            this.filter = new Tone.AutoFilter("2n", 500, 4).start();
-            this.distortion = new Tone.Distortion(0.5);
-            this.reverb = new Tone.Reverb({wet: 0.20, decay: 2});
-            this.pan = new Tone.AutoPanner("1n");
-            this.instrument.chain(this.filter, this.distortion, this.reverb, this.pan, Tone.Destination);
+            // this.filter = new Tone.AutoFilter("2n", 500, 4).start();
+            // this.distortion = new Tone.Distortion(0.5);
+            // this.instrument.chain(parent.filter, parent.distortion, Tone.Destination);
+            this.instrument.chain(parent.filter, parent.distortion);
         }
 
         randomUrl(sampler) {return sampler.urls.keys()[Math.floor(Math.random() * sampler.keys().length)]}
@@ -77,12 +76,16 @@ import { Time } from 'tone';
     class SequencerTrack {
 
         constructor(nb_steps, type) {
-            [this.step, this.maxStep] = [0, nb_steps];
+            [this.step, this.maxStep, this.type] = [0, nb_steps, type];
             [this.mode, this.multiplier] = ['normal', 1];
-            this.type = type;
+            [this.filter, this.distortion] = [
+                new Tone.AutoFilter("2n", 500, 4).start(),
+                new Tone.Distortion(0.2).toDestination()];
+
+            // Generating new cells
             this.cells = [];
             for (let i=0; i <= nb_steps; i++) {
-                this.cells.push(new SequencerCell(i, type))
+                this.cells.push(new SequencerCell(i, type, this))
             }
         }
 

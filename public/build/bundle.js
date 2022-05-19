@@ -30259,7 +30259,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (190:12) {#each track.cells as c}
+    // (193:12) {#each track.cells as c}
     function create_each_block_3(ctx) {
     	let cell;
     	let current;
@@ -30313,14 +30313,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(190:12) {#each track.cells as c}",
+    		source: "(193:12) {#each track.cells as c}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (199:12) {#each track2.cells as c}
+    // (202:12) {#each track2.cells as c}
     function create_each_block_2(ctx) {
     	let cell;
     	let current;
@@ -30374,14 +30374,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(199:12) {#each track2.cells as c}",
+    		source: "(202:12) {#each track2.cells as c}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (211:12) {#each track3.cells as c}
+    // (214:12) {#each track3.cells as c}
     function create_each_block_1$1(ctx) {
     	let cell;
     	let current;
@@ -30435,14 +30435,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(211:12) {#each track3.cells as c}",
+    		source: "(214:12) {#each track3.cells as c}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (223:12) {#each track4.cells as c}
+    // (226:12) {#each track4.cells as c}
     function create_each_block$1(ctx) {
     	let cell;
     	let current;
@@ -30496,7 +30496,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(223:12) {#each track4.cells as c}",
+    		source: "(226:12) {#each track4.cells as c}",
     		ctx
     	});
 
@@ -30671,33 +30671,33 @@ var app = (function () {
     			button6 = element("button");
     			button6.textContent = "*2";
     			attr_dev(div0, "class", "track svelte-31m2a2");
-    			add_location(div0, file$1, 188, 8, 6814);
+    			add_location(div0, file$1, 191, 8, 6960);
     			attr_dev(div1, "class", "track svelte-31m2a2");
-    			add_location(div1, file$1, 197, 8, 7119);
+    			add_location(div1, file$1, 200, 8, 7265);
     			attr_dev(div2, "class", "track svelte-31m2a2");
-    			add_location(div2, file$1, 209, 8, 7476);
+    			add_location(div2, file$1, 212, 8, 7622);
     			attr_dev(div3, "class", "track svelte-31m2a2");
-    			add_location(div3, file$1, 221, 8, 7833);
+    			add_location(div3, file$1, 224, 8, 7979);
     			attr_dev(div4, "class", "sequencer svelte-31m2a2");
-    			add_location(div4, file$1, 185, 4, 6749);
+    			add_location(div4, file$1, 188, 4, 6895);
     			attr_dev(button0, "class", "boxed_things svelte-31m2a2");
-    			add_location(button0, file$1, 234, 8, 8190);
+    			add_location(button0, file$1, 237, 8, 8336);
     			attr_dev(button1, "class", "boxed_things svelte-31m2a2");
-    			add_location(button1, file$1, 235, 8, 8300);
+    			add_location(button1, file$1, 238, 8, 8446);
     			attr_dev(button2, "class", "boxed_things svelte-31m2a2");
-    			add_location(button2, file$1, 236, 8, 8383);
+    			add_location(button2, file$1, 239, 8, 8529);
     			attr_dev(button3, "class", "boxed_things svelte-31m2a2");
-    			add_location(button3, file$1, 237, 8, 8466);
+    			add_location(button3, file$1, 240, 8, 8612);
     			attr_dev(button4, "class", "boxed_things svelte-31m2a2");
-    			add_location(button4, file$1, 238, 8, 8551);
+    			add_location(button4, file$1, 241, 8, 8697);
     			attr_dev(button5, "class", "boxed_things svelte-31m2a2");
-    			add_location(button5, file$1, 239, 8, 8636);
+    			add_location(button5, file$1, 242, 8, 8782);
     			attr_dev(button6, "class", "boxed_things svelte-31m2a2");
-    			add_location(button6, file$1, 240, 8, 8723);
+    			add_location(button6, file$1, 243, 8, 8869);
     			attr_dev(div5, "class", "ui svelte-31m2a2");
-    			add_location(div5, file$1, 233, 4, 8165);
+    			add_location(div5, file$1, 236, 4, 8311);
     			attr_dev(main, "class", "svelte-31m2a2");
-    			add_location(main, file$1, 184, 0, 6738);
+    			add_location(main, file$1, 187, 0, 6884);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -31017,7 +31017,7 @@ var app = (function () {
     	};
 
     	class SequencerCell {
-    		constructor(step_number, type) {
+    		constructor(step_number, type, parent) {
     			[this.number, this.type] = [step_number, type];
     			[this.on, this.active] = [false, Math.random() > 0.9 ? true : false];
     			this.sampleURL = "https://raw.githubusercontent.com/Bubobubobubobubo/LiveCodingLeFil/main/public/samples/";
@@ -31073,11 +31073,10 @@ var app = (function () {
     					break;
     			}
 
-    			this.filter = new AutoFilter("2n", 500, 4).start();
-    			this.distortion = new Distortion(0.5);
-    			this.reverb = new Reverb({ wet: 0.20, decay: 2 });
-    			this.pan = new AutoPanner("1n");
-    			this.instrument.chain(this.filter, this.distortion, this.reverb, this.pan, Destination);
+    			// this.filter = new Tone.AutoFilter("2n", 500, 4).start();
+    			// this.distortion = new Tone.Distortion(0.5);
+    			// this.instrument.chain(parent.filter, parent.distortion, Tone.Destination);
+    			this.instrument.chain(parent.filter, parent.distortion);
     		}
 
     		randomUrl(sampler) {
@@ -31094,13 +31093,19 @@ var app = (function () {
 
     	class SequencerTrack {
     		constructor(nb_steps, type) {
-    			[this.step, this.maxStep] = [0, nb_steps];
+    			[this.step, this.maxStep, this.type] = [0, nb_steps, type];
     			[this.mode, this.multiplier] = ['normal', 1];
-    			this.type = type;
+
+    			[this.filter, this.distortion] = [
+    				new AutoFilter("2n", 500, 4).start(),
+    				new Distortion(0.2).toDestination()
+    			];
+
+    			// Generating new cells
     			this.cells = [];
 
     			for (let i = 0; i <= nb_steps; i++) {
-    				this.cells.push(new SequencerCell(i, type));
+    				this.cells.push(new SequencerCell(i, type, this));
     			}
     		}
 
