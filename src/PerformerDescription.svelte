@@ -20,6 +20,11 @@
     <div class="text_item">
         <p class="artistdescription">{description}</p>
     </div>
+
+    <div class="yt">
+        <iframe width="512" height="315" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
     <div class="link_item">
         <p class="link_description"><a href={link}>Site internet</a></p>
     </div>
@@ -142,4 +147,29 @@
         max-width: 20vw;
         max-height: 20vh;
     }
+
+    .yt iframe {
+        position: absolute;
+        top: 0; bottom: 0; left: 0;
+        width: 100%;
+        height: 50%;
+        border: 0;
+    } */
+
+    .yt {
+        position: relative;
+        width: 50%;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+    }
+
+    .yt iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 30%;
+    }
+
+
 </style>

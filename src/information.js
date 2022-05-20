@@ -13,11 +13,11 @@ const pictures = {
 }
 
 const videos = {
-    raph: "./videos/Bubo.webm",
-    remi: "./videos/ralt144mi.webm",
-    elie: "./videos/elie.webm",
-    baya: "./videos/azertype.webm",
-    leon: "./videos/leon.mp4",
+    raph: "https://www.youtube.com/embed/MeEtO2Ti8_o",
+    remi: "https://www.youtube.com/embed/61Q55nzFJq4",
+    elie: "https://www.youtube.com/embed/3sWzO1mDk9Q",
+    baya: "https://www.youtube.com/embed/RiGtfM0fmBE",
+    leon: "https://peertube.swrs.net/videos/watch/ba4a1b7f-56db-45a9-9450-8a16185697c4",
 }
 
 const links = {

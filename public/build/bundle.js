@@ -1144,9 +1144,13 @@ var app = (function () {
     	let t5;
     	let t6;
     	let div2;
+    	let iframe;
+    	let iframe_src_value;
+    	let t7;
+    	let div3;
     	let p1;
     	let a1;
-    	let t7;
+    	let t8;
 
     	const block = {
     		c: function create() {
@@ -1165,32 +1169,46 @@ var app = (function () {
     			t5 = text(/*description*/ ctx[2]);
     			t6 = space();
     			div2 = element("div");
+    			iframe = element("iframe");
+    			t7 = space();
+    			div3 = element("div");
     			p1 = element("p");
     			a1 = element("a");
-    			t7 = text("Site internet");
-    			attr_dev(h1, "class", "artistname svelte-xu0i5m");
+    			t8 = text("Site internet");
+    			attr_dev(h1, "class", "artistname svelte-1we9e09");
     			add_location(h1, file$5, 13, 8, 210);
     			attr_dev(a0, "href", /*link*/ ctx[4]);
-    			attr_dev(a0, "class", "name_with_link svelte-xu0i5m");
+    			attr_dev(a0, "class", "name_with_link svelte-1we9e09");
     			add_location(a0, file$5, 14, 8, 253);
-    			attr_dev(div0, "class", "box_header svelte-xu0i5m");
+    			attr_dev(div0, "class", "box_header svelte-1we9e09");
     			add_location(div0, file$5, 12, 4, 177);
     			if (!src_url_equal(img.src, img_src_value = /*url_portrait*/ ctx[3])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "performer_picture");
-    			attr_dev(img, "class", "svelte-xu0i5m");
+    			attr_dev(img, "class", "svelte-1we9e09");
     			add_location(img, file$5, 17, 4, 320);
-    			attr_dev(p0, "class", "artistdescription svelte-xu0i5m");
+    			attr_dev(p0, "class", "artistdescription svelte-1we9e09");
     			add_location(p0, file$5, 20, 8, 406);
-    			attr_dev(div1, "class", "text_item svelte-xu0i5m");
+    			attr_dev(div1, "class", "text_item svelte-1we9e09");
     			add_location(div1, file$5, 19, 4, 374);
+    			attr_dev(iframe, "width", "800");
+    			attr_dev(iframe, "height", "600");
+    			if (!src_url_equal(iframe.src, iframe_src_value = /*video*/ ctx[5])) attr_dev(iframe, "src", iframe_src_value);
+    			attr_dev(iframe, "title", "YouTube video player");
+    			attr_dev(iframe, "frameborder", "0");
+    			attr_dev(iframe, "allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    			iframe.allowFullscreen = true;
+    			attr_dev(iframe, "class", "svelte-1we9e09");
+    			add_location(iframe, file$5, 24, 8, 494);
+    			attr_dev(div2, "class", "yt svelte-1we9e09");
+    			add_location(div2, file$5, 23, 4, 469);
     			attr_dev(a1, "href", /*link*/ ctx[4]);
-    			attr_dev(a1, "class", "svelte-xu0i5m");
-    			add_location(a1, file$5, 23, 36, 528);
-    			attr_dev(p1, "class", "link_description svelte-xu0i5m");
-    			add_location(p1, file$5, 23, 8, 500);
-    			attr_dev(div2, "class", "link_item svelte-xu0i5m");
-    			add_location(div2, file$5, 22, 4, 468);
-    			attr_dev(main, "class", "svelte-xu0i5m");
+    			attr_dev(a1, "class", "svelte-1we9e09");
+    			add_location(a1, file$5, 33, 36, 978);
+    			attr_dev(p1, "class", "link_description svelte-1we9e09");
+    			add_location(p1, file$5, 33, 8, 950);
+    			attr_dev(div3, "class", "link_item svelte-1we9e09");
+    			add_location(div3, file$5, 32, 4, 918);
+    			attr_dev(main, "class", "svelte-1we9e09");
     			add_location(main, file$5, 10, 0, 165);
     		},
     		l: function claim(nodes) {
@@ -1212,9 +1230,12 @@ var app = (function () {
     			append_dev(p0, t5);
     			append_dev(main, t6);
     			append_dev(main, div2);
-    			append_dev(div2, p1);
+    			append_dev(div2, iframe);
+    			append_dev(main, t7);
+    			append_dev(main, div3);
+    			append_dev(div3, p1);
     			append_dev(p1, a1);
-    			append_dev(a1, t7);
+    			append_dev(a1, t8);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*name*/ 1) set_data_dev(t0, /*name*/ ctx[0]);
@@ -1229,6 +1250,10 @@ var app = (function () {
     			}
 
     			if (dirty & /*description*/ 4) set_data_dev(t5, /*description*/ ctx[2]);
+
+    			if (dirty & /*video*/ 32 && !src_url_equal(iframe.src, iframe_src_value = /*video*/ ctx[5])) {
+    				attr_dev(iframe, "src", iframe_src_value);
+    			}
 
     			if (dirty & /*link*/ 16) {
     				attr_dev(a1, "href", /*link*/ ctx[4]);
@@ -1557,11 +1582,11 @@ var app = (function () {
     };
 
     const videos = {
-        raph: "./videos/Bubo.webm",
-        remi: "./videos/ralt144mi.webm",
-        elie: "./videos/elie.webm",
-        baya: "./videos/azertype.webm",
-        leon: "./videos/leon.mp4",
+        raph: "https://www.youtube.com/embed/MeEtO2Ti8_o",
+        remi: "https://www.youtube.com/embed/61Q55nzFJq4",
+        elie: "https://www.youtube.com/embed/3sWzO1mDk9Q",
+        baya: "https://www.youtube.com/embed/RiGtfM0fmBE",
+        leon: "https://peertube.swrs.net/videos/watch/ba4a1b7f-56db-45a9-9450-8a16185697c4",
     };
 
     const links = {
