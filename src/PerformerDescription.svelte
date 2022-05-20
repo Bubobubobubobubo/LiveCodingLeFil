@@ -148,28 +148,21 @@
         max-height: 20vh;
     }
 
-    .yt iframe {
-        position: absolute;
-        top: 0; bottom: 0; left: 0;
-        width: 100%;
-        height: 50%;
-        border: 0;
-    } */
-
     .yt {
+        overflow: hidden;
         position: relative;
-        width: 50%;
-        padding-bottom: 56.25%; /* 16:9 */
-        height: 0;
+        width:100%;
+    }
+
+    .yt::after {
+        padding-top: 56.25%;
+        display: block;
+        content: '';
     }
 
     .yt iframe {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 30%;
-        height: 30%;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
     }
-
-
 </style>
